@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不整脈（動悸・胸の違和感）について｜佐々木ハートクリニック</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            color: #333333;
+            line-height: 1.8;
+            background-color: #f9fafb; /* 背景色：薄いグレー */
+        }
+        
+        /* 既存サイトのテイストに合わせた見出しスタイル */
+        .section-title {
+            position: relative;
+            padding: 0.75rem 1rem 0.75rem 1.5rem;
+            background-color: #f0f7ff;
+            border-left: 6px solid #2563eb; /* クリニックらしいブルー */
+            border-radius: 0 4px 4px 0;
+            color: #1e3a8a;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sub-title {
+            color: #1d4ed8;
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px dashed #bfdbfe;
+        }
+
+        .highlight {
+            background: linear-gradient(transparent 60%, #fed7aa 60%); /* やさしいオレンジのハイライト */
+            font-weight: bold;
+        }
+
+        .blue-highlight {
+            background: linear-gradient(transparent 60%, #bfdbfe 60%); /* ブルーのハイライト */
+            font-weight: bold;
+        }
+
+        /* ふきだし風の導入部 */
+        .intro-box {
+            background-color: #ffffff;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .symptom-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        .symptom-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* ステップ用のスタイル */
+        .step-card {
+            background: #ffffff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .step-label {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            font-weight: bold;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー部分は既存サイトの共通パーツが入る想定のため省略・あるいはプレースホルダー -->
+    <header class="bg-white shadow-sm py-4 mb-8">
+        <div class="max-w-5xl mx-auto px-4 flex justify-center">
+            <h1 class="text-xl font-bold text-gray-400">佐々木ハートクリニック 診療案内プレビュー</h1>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        
+        <!-- ページタイトル -->
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-10 tracking-tight">
+            不整脈<span class="text-xl md:text-2xl text-gray-500 font-normal ml-2">（動悸・胸の違和感）</span>について
+        </h1>
+
+        <!-- 導入部 -->
+        <div class="intro-box mb-12">
+            <ul class="symptom-list text-lg md:text-xl mb-6 space-y-3">
+                <li>「なんだか胸がドキドキする」</li>
+                <li>「脈が一瞬、飛ぶような気がする」</li>
+                <li>「階段を上ると、以前より息が切れる」</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed">
+                そんな, ふとした瞬間に感じる胸の違和感は, 心臓からの大切なサインかもしれません。<br>
+                不整脈には, 経過を追えば良いものも多い一方で, 放っておくと大きな病気につながるものも隠れています。<br>
+                一人で抱え込まず, まずはその不安を当院にお聞かせください。
+            </p>
+        </div>
+
+        <!-- 1. 不整脈について詳しく知る -->
+        <section>
+            <h2 class="section-title">1. 不整脈について詳しく知る</h2>
+            <p class="mb-8">心臓は1日に約10万回, 休むことなく正確なリズムを刻んでいます。このリズムが乱れてしまう状態を「不整脈」と呼びます。</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    代表的な3つのタイプ
+                </h3>
+
+                <!-- ① 頻脈 -->
+                <div class="mb-10">
+                    <h4 class="text-lg font-bold text-blue-800 bg-blue-50 py-2 px-4 rounded mb-4">① 脈が速くなる「頻脈（ひんみゃく）」</h4>
+                    <p class="mb-4">ドクドクと激しい動悸や, 胸の苦しさを感じます。 特に注意が必要なのが<span class="highlight">「心房細動（しんぼうさいどう）」</span>です。</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <figure class="bg-gray-50 p-2 rounded text-center">
+                            <img src="ECG_AF.jpg" alt="心房細動の心電図波形" class="mx-auto max-w-full h-auto rounded">
+                            <figcaption class="text-sm text-gray-500 mt-2">心房細動の心電図</figcaption>
+                        </figure>
+                        <figure class="bg-gray-50 p-2 rounded text-center">
+                            <img src="normalECG vs AF ECG.jpg" alt="正常な心臓と心房細動の心臓の比較" class="mx-auto max-w-full h-auto rounded">
+                            <figcaption class="text-sm text-gray-500 mt-2">正常なリズムと心房細動の違い</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <p class="mb-6">心臓の上側の部屋（心房）が, 震えるように細かく動いてしまう状態です。</p>
+
+                    <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-6">
+                        <h5 class="font-bold text-red-800 mb-2">（補足）なぜ心房細動は怖いの？（心原性脳梗塞のリスク）</h5>
+                        <p class="text-sm md:text-base text-gray-700 mb-4">
+                            心臓が細かく震えると, 中で血の流れがよどみ, 「血栓（血の塊）」ができやすくなります。この塊が血流に乗って, 前触れもなく突然, 脳の太い血管に詰まってしまうのが<strong>「心原性脳梗塞」</strong>です。<br>
+                            他の脳梗塞に比べて詰まる血管が太いため, 範囲が広くなりやすく, 突然の意識障害や麻痺など, 命に関わる深刻な事態を招くのが特徴です。
+                        </p>
+                        <div class="text-center mb-4">
+                            <img src="cardioembolic stroke.jpg" alt="心原性脳梗塞のメカニズム" class="mx-auto max-w-full sm:max-w-md h-auto rounded shadow-sm border border-gray-200">
+                        </div>
+                        <p class="font-bold text-red-700 text-center">心房細動を早期に見つけ, 適切に治療することは, あなたの脳を守ることに直結します。</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h5 class="font-bold text-gray-800 mb-2">【知っておきたい】心房細動と「睡眠時無呼吸症候群」の深い関係</h5>
+                        <p class="text-sm text-gray-700">
+                            実は, 大きないびきや睡眠中の無呼吸を引き起こす「睡眠時無呼吸症候群（SAS）」は, 心房細動を引き起こす大きな原因の一つであることが分かっています。睡眠中の酸欠状態が心臓に強い負担をかけ, リズムを乱してしまうのです。不整脈の根本的な解決には, この睡眠時の呼吸状態にも目を向けることが重要です。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ② 徐脈 -->
+                <div class="mb-10">
+                    <h4 class="text-lg font-bold text-blue-800 bg-blue-50 py-2 px-4 rounded mb-4">② 脈が遅くなる「徐脈（じょみゃく）」</h4>
+                    <p class="mb-4">全身に送られる血液が足りなくなり, 強いだるさ, めまい, 時には意識を失う（失神）こともあります。「最近, 年のせいか疲れやすくなった」と思っていたら, 実は徐脈だったというケースも少なくありません。</p>
+                    <figure class="bg-gray-50 p-2 rounded text-center mb-4">
+                        <img src="SSS_ECG.jpg" alt="徐脈の心電図波形" class="mx-auto max-w-full h-auto rounded border border-gray-200">
+                    </figure>
+                </div>
+
+                <!-- ③ 期外収縮 -->
+                <div>
+                    <h4 class="text-lg font-bold text-blue-800 bg-blue-50 py-2 px-4 rounded mb-4">③ 脈が飛ぶ「期外収縮（きがいしゅうしゅく）」</h4>
+                    <p class="mb-4">「ドキンとする」「脈が抜ける」ような感覚です。多くは心配のないものですが, 回数が極端に多い場合や, 心臓のポンプ機能自体に持病がある場合は注意深いチェックが必要です。</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <figure class="bg-gray-50 p-2 rounded text-center">
+                            <img src="ECG_PVC.jpg" alt="期外収縮の心電図（単発）" class="mx-auto max-w-full h-auto rounded border border-gray-200">
+                        </figure>
+                        <figure class="bg-gray-50 p-2 rounded text-center">
+                            <img src="ECG_NSVT.jpg" alt="期外収縮의 心電図（連発）" class="mx-auto max-w-full h-auto rounded border border-gray-200">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 【最新検査】ePatch -->
+        <section>
+            <h2 class="section-title">2. 【最新検査】5日間の見守り。フィリップス社「ePatch」</h2>
+            
+            <div class="text-center mb-8">
+                <p class="text-xl font-bold text-gray-800 mb-2">「病院に来た時に限って, 症状が出ない……」</p>
+                <p class="text-gray-600">これは不整脈の診断において, 患者様が最も多く経験される悩みです。</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+                <div class="md:w-1/2">
+                    <p class="mb-4">
+                        不整脈は, 24時間ずっと出ているわけではありません。数日に1回, あるいは特定の条件下でしか現れないこともあります。<br>
+                        当院では, この問題を解消するために, <span class="blue-highlight">フィリップス社製の最新ホルター心電計「ePatch（イーパッチ）」</span>を導入しています。
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="ePatch.jpg" alt="フィリップス社製 ePatch" class="w-full max-w-xs mx-auto rounded-lg shadow-md">
+                </div>
+            </div>
+
+            <h3 class="sub-title">なぜ「5日間」の記録が必要なのか？</h3>
+            <p class="mb-8">
+                従来のホルター心電図は「24時間」の記録が一般的でした。しかし, たまにしか出ない不整脈を見つけるには, 1日だけの記録では時間が足りないことも多いのです。<br>
+                ePatchは<strong>最大5日間（120時間）</strong>の連続記録が可能です。<br>
+                これにより, 数日に1回しか現れない微かな異常もしっかりと捉えることができ, 診断の精度が飛躍的に高まります。「原因がわかって安心した」という納得感のある診断を目指しています。
+            </p>
+
+            <h3 class="sub-title">ePatchの4つの安心</h3>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-5 rounded-lg border border-gray-200 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="md:w-2/3">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">① 驚くほどの軽さと小ささ</h4>
+                        <p>数センチの小さなパッチを胸に貼るだけ。従来の検査のような「重い機械を腰にぶら下げる」「複雑なコードを体に巻き付ける」といった負担はありません。<br>衣服の下に隠れるほどの薄さと小ささで, 日常生活への負担がほとんどありません。</p>
+                    </div>
+                    <div class="md:w-1/3 text-center">
+                        <img src="ePatch on body image.jpg" alt="ePatchの装着イメージ" class="mx-auto rounded-lg max-w-full h-auto">
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg border border-gray-200">
+                    <h4 class="text-lg font-bold text-blue-700 mb-2">② そのままシャワーOK</h4>
+                    <p>高い防水性能を備えているため, 装着したままシャワーを浴びることができます。5日間, 日常生活のリズムを崩すことなく, いつも通りにお過ごしいただけます。</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg border border-gray-200">
+                    <h4 class="text-lg font-bold text-blue-700 mb-2">③ 高度なAI解析と専門医のダブルチェック</h4>
+                    <p>膨大な5日間のデータは, フィリップス社の専門技師と高度なAIが解析。その結果をさらに専門医が詳しく分析し, 最終的な診断を下します。テクノロジーと専門医の視点, 両方であなたの心臓を見守ります。</p>
+                </div>
+
+                <div class="bg-blue-50 p-5 rounded-lg border border-blue-200">
+                    <h4 class="text-lg font-bold text-blue-800 mb-2">④ 不整脈と同時に「睡眠時無呼吸症候群」のリスクも推測</h4>
+                    <p>
+                        心房細動の背後には, 睡眠時無呼吸症候群（SAS）が隠れていることが少なくありません。<br>
+                        最新のePatchの解析システムでは, 記録された心電図データから睡眠中の「周期性心拍変動（CVHR）」という特殊なパターンを読み取ることができます。これにより, 心電図の検査を行うだけで, 同時に<strong>「睡眠時無呼吸症候群が隠れていないか」</strong>というリスクまで推測できるようになりました。一つの検査で, 心臓の負担の「根本的な原因」により深く迫ることができます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 【さらに発作が少ない方へ】携帯型心電計での記録 -->
+        <section>
+            <h2 class="section-title">3. 【さらに発作が少ない方へ】携帯型心電計での記録</h2>
+            <p class="mb-6">「1週間に1回あるかないか」「月に数回だけ症状が出る」といった, ePatchの5日間でも捉えきれないほど発作の頻度が少ない方には, 「携帯型発作時心電図」を用いた検査をご提案しています。</p>
+            
+            <h3 class="sub-title">携帯型発作時心電図とは？</h3>
+            <p class="mb-6">症状が出た「その瞬間」に, ご自身で機器を胸や手に当てて心電図を記録する検査です。当院では, 患者様が使いやすく, かつ精度の高い以下の機器をお貸出ししています。</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                <!-- HCG901 -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
+                    <img src="HCG901.jpg" alt="オムロン社 HCG-901" class="mx-auto h-48 object-contain mb-4">
+                    <h4 class="font-bold text-lg mb-2">オムロン社「HCG-901」</h4>
+                    <p class="text-sm text-gray-600 text-left">医療機関向けに開発された, 信頼性の高い携帯型心電計です。症状を感じた時に素早く胸に当てるだけで, 高精度な波形を記録し, 医師の正確な診断をサポートします。</p>
+                </div>
+                <!-- チェックミー -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
+                    <img src="checkme.jpg" alt="三栄メディシス チェックミー" class="mx-auto h-48 object-contain mb-4">
+                    <h4 class="font-bold text-lg mb-2">三栄メディシス「チェックミー」</h4>
+                    <p class="text-sm text-gray-600 text-left">名刺サイズで非常にコンパクトな心電計です。お出かけ先や職場など, いつでもどこでも持ち歩きやすく, 急な症状にもすぐに対応して記録することができます。</p>
+                </div>
+            </div>
+            <p class="text-center font-bold text-gray-800">記録されたデータはご来院時に院長が確認し, 診断に繋げます。「たまにしか出ないから…」と諦めず, まずはご相談ください。</p>
+        </section>
+
+        <!-- 4. 不整脈の背景に隠れている病気とその検査 -->
+        <section>
+            <h2 class="section-title">4. 不整脈の背景に隠れている病気とその検査</h2>
+            <p class="mb-6">不整脈は, 心臓の電気信号の乱れそのものが原因である場合のほか, 心臓の構造的な異常や, 心臓以外の体の病気が原因で引き起こされていることがあります。当院では, 心電図検査で脈の乱れを捉えるだけでなく, 不整脈を引き起こしている「根本的な原因」を探るための検査もしっかりと行います。</p>
+
+            <div class="mb-8">
+                <h3 class="sub-title">心臓そのものに原因がある場合（心疾患）</h3>
+                <p class="mb-4">「心臓弁膜症」や「心筋症」といった, 心臓の筋肉や弁に異常がある場合, それが心臓への強いストレスとなって不整脈を引き起こすことがあります。</p>
+                <ul class="list-disc pl-6 space-y-4 text-gray-700">
+                    <li>
+                        <strong>心エコー（超音波）検査：</strong>超音波を使って, 心臓の動き, 壁の厚さ, 弁の状態などを視覚的に詳しく確認します。
+                        <div class="mt-2 mb-4">
+                            <img src="UCG.jpg" alt="心エコー（超音波）検査の様子" class="w-full md:w-1/2 h-auto rounded-lg border border-gray-200 shadow-sm">
+                        </div>
+                    </li>
+                    <li>
+                        <strong>BNP検査（血液検査）：</strong>心臓にどれくらい負担がかかっているかを示す「心臓ストレスホルモン（BNP）」の数値を調べます。
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="sub-title">心臓以外に原因がある場合（非心臓疾患）</h3>
+                <p class="mb-4">心臓自体は正常でも, 全身の別の病気や状態が影響して脈が乱れることがあります。</p>
+                <ul class="list-disc pl-6 space-y-4 text-gray-700">
+                    <li>
+                        <strong>甲状腺機能異常などの内分泌疾患, 電解質（ミネラル）の異常</strong><br>
+                        主な検査：血液検査を行い, 甲状腺ホルモンの分泌量や, 心臓を正常に動かすために必要なカリウムなどのミネラルバランスを調べます。
+                    </li>
+                    <li>
+                        <strong>睡眠時無呼吸症候群（SAS）</strong> <span class="text-sm text-gray-500">（※前述の通り, 心房細動などの大きな原因となります）</span><br>
+                        主な検査：<strong>睡眠ポリグラフ検査（PSG）</strong>などを用いて, 睡眠中の呼吸状態やいびき, 血液中の酸素不足が起きていないかを詳しく評価します。
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. 診療の流れ -->
+        <section>
+            <h2 class="section-title">5. 診療の流れ</h2>
+            <p class="mb-6 text-sm text-gray-600">不整脈が疑われる場合, 当院では以下のような流れでスムーズに検査・診断を進めていきます。（※以下はePatch検査の場合の流れです。携帯型心電計の場合は別途ご説明いたします）</p>
+            
+            <div class="space-y-4">
+                <div class="step-card relative">
+                    <span class="step-label">STEP 1</span>
+                    <h4 class="font-bold text-lg mb-2">カウンセリング・診察</h4>
+                    <p>まずは, いつ, どのような時に胸の違和感や動悸が出るのか, リラックスした雰囲気でじっくりとお話を伺います。「こんな些細なことで…」と遠慮なさらず, 気になっていることを何でもお話しください。</p>
+                </div>
+                
+                <div class="step-card relative">
+                    <span class="step-label">STEP 2</span>
+                    <h4 class="font-bold text-lg mb-2">検査機器の装着・お渡し</h4>
+                    <p>診察の結果, 詳しい検査が必要な場合は機器をご用意します。ePatchの場合は当院のスタッフが丁寧に装着し, ご自宅での過ごし方をご説明します（ご自宅へ郵送し, ご自身で装着して頂くことも可能です。）準備は10分程度です。携帯型心電計の場合は, 使い方をご説明した上でお貸出しいたします。</p>
+                </div>
+
+                <div class="step-card relative">
+                    <span class="step-label">STEP 3</span>
+                    <h4 class="font-bold text-lg mb-2">日常生活での記録</h4>
+                    <p>お仕事, 家事, お風呂や睡眠など, 普段通りに生活してください。ePatchの場合は期間中に動悸があった時にボタンを押し, 携帯型心電計の場合は症状が出たタイミングでご自身で記録をとっていただきます。</p>
+                </div>
+
+                <div class="step-card relative">
+                    <span class="step-label">STEP 4</span>
+                    <h4 class="font-bold text-lg mb-2">機器の返却と解析</h4>
+                    <p>所定の期間が終わりましたら, 機器を当院へご返送（またはご持参）いただきます。その後, 専門チームや当院医師により心電図記録の解析を行います。</p>
+                </div>
+
+                <div class="step-card relative">
+                    <span class="step-label">STEP 5</span>
+                    <h4 class="font-bold text-lg mb-2">結果のご説明</h4>
+                    <p>解析結果が揃いましたら, 再度ご来院いただきます。 結果のデータをもとに, 現在のあなたの心臓のリズムがどのような状態なのか, 丁寧にご説明します。もし治療が必要な場合でも, お一人おひとりのライフスタイルに合わせた最適な治療方針を一緒に考えていきます。<br><span class="text-sm text-gray-500">（ご来院が難しい場合などは, 必要に応じて, オンライン診療や郵送での結果説明にも対応しています）</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 不整脈専門医による、安心の治療・連携体制 -->
+        <section>
+            <h2 class="section-title">6. 不整脈専門医による, 安心の治療・連携体制</h2>
+            <p class="mb-6 font-bold text-lg">
+                当院の院長（佐々木 玲聡）は, <span class="blue-highlight">日本循環器学会認定「循環器専門医」であると同時に, より専門知識と経験を要する日本不整脈心電学会認定「不整脈専門医」</span>です。
+            </p>
+            <p class="mb-8">クリニックでの適切な検査や薬物治療はもちろんのこと, 根治に向けた高度な治療が必要と判断した場合には, 市内の総合病院と速やかに連携し, 患者様にとって最善の治療ルートを確保します。</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <h4 class="font-bold text-blue-900 mb-3 border-b border-blue-200 pb-2">頻脈（心房細動など）に対する<br>カテーテルアブレーション治療の連携</h4>
+                    <p class="text-sm">お薬だけでは抑えきれない心房細動などの頻脈に対しては, 不整脈を根本から治す「カテーテルアブレーション治療」をご案内しています。信頼できる市内の総合病院へ適切にご紹介し, 無事に退院された後の定期的なフォローアップ（経過観察やお薬の調整）は, 引き続き当院にて病診連携で責任を持って行います。</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <h4 class="font-bold text-blue-900 mb-3 border-b border-blue-200 pb-2">徐脈に対する<br>ペースメーカー等デバイス治療の連携</h4>
+                    <p class="text-sm">脈が極端に遅くなる徐脈性不整脈で, ペースメーカーなどの心臓植込みデバイスが必要な場合も, 速やかに専門病院へご紹介します。また, 手術を終えられた後の定期的な機器のチェック（デバイス外来）も当院で対応しておりますので, 遠方の病院へ通い続けるご負担を軽減できます。</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    「イーツーネット医療連携」を活用した万全のサポート
+                </h4>
+                <p class="text-sm">
+                    当院と市内の基幹病院との連携には, 静岡市静岡医師会が運用するシステム<strong>「イーツーネット医療連携」</strong>を導入しています。患者様の紹介状や検査データなどを安全かつスムーズに共有することで, 「手術や高度な治療は総合病院で, 日々の安心な管理は当院で」という, 切れ目のない万全のサポート体制を実現しています。
+                </p>
+            </div>
+        </section>
+
+        <!-- 院長よりメッセージ -->
+        <section class="mt-16 bg-white border border-gray-200 rounded-xl p-8 shadow-sm relative">
+            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-2 rounded-full font-bold shadow-md">
+                院長よりメッセージ
+            </div>
+            <div class="mt-4 text-center md:text-left md:flex gap-6 items-center">
+                <div class="md:w-3/4">
+                    <p class="mb-4 leading-relaxed text-gray-700">
+                        皆様がいつまでも健康な心臓のリズムを保ち, 安心して毎日を笑顔で過ごせるようサポートすることが私の願いです。<br>
+                        不整脈の症状は, 目に見えないからこそ不安が募るものです。「もしかして病気かもしれない」と一人で悩む時間は, 心臓にとっても良いものではありません。
+                    </p>
+                    <p class="font-bold text-lg text-blue-900">
+                        胸のドキドキや違和感に気づいたら, どうぞ肩の力を抜いて, ぜひともご相談ください。私たちが, あなたの心臓をしっかりと見守ります。
+                    </p>
+                </div>
+                <!-- 院長の写真 -->
+                <div class="hidden md:block md:w-1/4 text-center">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-gray-400 text-sm border-4 border-white shadow-md">
+                        [院長の画像]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-400">
+            &copy; 佐々木ハートクリニック All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
